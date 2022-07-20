@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+h1{
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+.tenzies-body{
+    margin: 0;
+    background-color:  rgb(74, 108, 79);
+    padding: 20px;
+    height: 642px;
+    font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.tenzies-main{
+    background-color: #5d1010;
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 50px;
+    color: rgb(207, 216, 18);
+}
+
+.dice-container{
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 20px;
+}
+
+.die-face{
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.die-num{
+    font-size: 1.5rem;
+}
+
+.die-roll{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(13, 159, 231);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.die-roll:focus {
+    outline: none;
+}
+
+.die-roll:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
